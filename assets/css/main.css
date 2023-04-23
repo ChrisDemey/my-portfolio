@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.perspective {
+    perspective: 300px;
+}
+
+.background-animated {
+    animation: crawl 16s linear infinite;
+    background-size: 50px 50px;
+    background-image:
+            linear-gradient(to right, rgba(255, 255, 255, .2) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(255, 255, 255, .2) 1px, transparent 1px);
+    transform: rotateX(55deg);
+}
+@keyframes crawl {
+    to {
+        background-position-y: bottom;
+    }
+}
