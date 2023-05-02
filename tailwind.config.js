@@ -30,7 +30,8 @@ module.exports = {
         'neon-inner': '0 0 5px var(--color), 0 0 10px var(--color), 0 0 20px var(--color), inset 0 0 5px var(--color), inset 0 0 10px var(--color), inset 0 0 20px var(--color)',
       },
       animation: {
-        glow: 'glow 10s infinite linear'
+        glow: 'glow 10s infinite linear',
+        blink: 'blink 5s infinite linear'
       },
       keyframes: {
         glow: {
@@ -43,21 +44,17 @@ module.exports = {
           '65%': {
             opacity: 0.2,
           }
+        },
+        blink: {
+          '0%, 30%, 32%, 34%, 100%': {
+            opacity: 1,
+          },
+          '31%, 33%': {
+            opacity: 0.3,
+          }
         }
       }
-    },
-  },
-  plugins: [
-    plugin(function ({ matchUtilities, theme }) {
-      matchUtilities(
-          {
-            'text-shadow': (value) => ({
-              textShadow: value,
-            }),
-          },
-          { values: theme('textShadow') }
-      )
-    }),
-  ],
+    }
+  }
 }
 

@@ -4,5 +4,12 @@
             &#60;Portfolio :page="My timeline" &#47;&#62;
         </Title>
     </Head>
-    <AboutSections />
+    <Container>
+        <template #top>
+            <Training />
+        </template>
+        <template #bottom>
+            <Work />
+        </template>
+    </Container>
 </template>

@@ -1,7 +1,7 @@
 <template>
     <div class="absolute z-0 w-full h-screen flex flex-col overflow-hidden">
         <!-- space -->
-        <img class="absolute z-0 w-full h-screen object-cover" src="https://wallpaperset.com/w/full/c/1/4/427159.jpg" alt="space_img">
+        <img class="absolute z-0 w-full h-screen object-cover" src="/images/space.jpeg" alt="space_img">
         <!-- glowing sun -->
         <div class="absolute z-10 w-full h-screen grid place-items-center bg-gradient-to-t from-indigo-500/50 to-transparent">
             <!-- glow effect -->

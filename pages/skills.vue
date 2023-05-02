@@ -4,7 +4,12 @@
             &#60;Portfolio :page="My skills" &#47;&#62;
         </Title>
     </Head>
-    <SkillSections />
+    <Container>
+        <template #top>
+            <Stack />
+        </template>
+        <template #bottom>
+            <Learning />
+        </template>
+    </Container>
 </template>
-<script setup lang="ts">
-</script>
