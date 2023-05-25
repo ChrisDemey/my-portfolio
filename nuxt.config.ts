@@ -7,7 +7,7 @@ export default defineNuxtConfig({
             pathPrefix: false,
         },
     ],
-    modules: ['nuxt-icon'],
+    modules: ['nuxt-swiper'],
     pages: true,
     postcss: {
         plugins: {
