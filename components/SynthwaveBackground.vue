@@ -55,5 +55,3 @@
     mask: var(--mask);
 }
 </style>
-<script setup lang="ts">
-</script>

@@ -8,7 +8,7 @@
          "
     >
         <div class="w-1/2">
-            <p class="text-justify text-teal-300 drop-shadow-neon">
+            <p class="text-justify text-teal-300 drop-shadow-neon-sm">
                 Après avoir terminé mon stage, j'ai décroché un contrat en tant que développeur web pendant plus de 3 ans. Mon objectif est de continuer à apprendre de nouveaux langages et à acquérir de l'expérience dans le domaine du développement web.
             </p>
         </div>

@@ -19,6 +19,10 @@ module.exports = {
           '0 0 4px var(--color)',
           '0 0 25px var(--color)',
         ],
+        'neon-sm': [
+          '0 0 2px var(--color)',
+          '0 0 4px var(--color)',
+        ],
         'neon-active': [
             '0 0 2px rgb(236 72 153)',
             '0 0 4px rgb(236 72 153)',
