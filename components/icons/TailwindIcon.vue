@@ -1,5 +1,5 @@
 <template>
-    <div class="flex m-auto h-32 aspect-square">
+    <div class="flex m-auto h-12 md:h-32 aspect-square">
         <svg class="w-full" viewBox="0 0 256 154">
             <defs>
                 <linearGradient id="logosTailwindcssIcon0" x1="-2.778%" x2="100%" y1="32%" y2="67.556%">

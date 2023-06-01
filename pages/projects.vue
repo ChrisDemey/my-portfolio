@@ -25,7 +25,7 @@
 
     <Container>
         <template #top>
-            <div class="flex items-center space-x-8">
+            <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 space-x-0 md:space-x-8">
                 <ImagesCard
                     name="carsharing"
                     image="/images/projects/carsharing/trips_list.png"

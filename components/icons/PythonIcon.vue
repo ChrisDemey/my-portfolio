@@ -1,5 +1,5 @@
 <template>
-    <div class="flex m-auto h-12 aspect-square">
+    <div class="flex m-auto h-8 md:h-12 aspect-square">
         <svg class="w-full" viewBox="0 0 256 255">
             <defs>
                 <linearGradient id="logosPython0" x1="12.959%" x2="79.639%" y1="12.039%" y2="78.201%">
