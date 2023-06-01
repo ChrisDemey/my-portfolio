@@ -7,7 +7,7 @@ export default defineNuxtConfig({
             pathPrefix: false,
         },
     ],
-    modules: ['nuxt-swiper'],
+    modules: ['nuxt-swiper', '@pinia/nuxt'],
     pages: true,
     postcss: {
         plugins: {
