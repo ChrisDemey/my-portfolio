@@ -7,7 +7,26 @@ export default defineNuxtConfig({
             pathPrefix: false,
         },
     ],
-    modules: ['nuxt-swiper', '@pinia/nuxt'],
+    i18n: {
+        lazy: true,
+        langDir: 'locales/',
+        strategy: 'no_prefix',
+        locales: [
+            {
+                code: 'en',
+                iso: 'en-US',
+                name: 'English',
+                file: 'en-US.json',
+            },
+            {
+                code: 'fr',
+                iso: 'fr-BE',
+                name: 'Français',
+                file: 'fr-BE.json',
+            }
+        ]
+    },
+    modules: ['nuxt-swiper', '@pinia/nuxt', '@nuxtjs/i18n',],
     pages: true,
     postcss: {
         plugins: {

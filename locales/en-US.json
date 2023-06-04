@@ -1,0 +1,18 @@
+{
+  "home_nav": "Home",
+  "about_nav": "About",
+  "skills_nav": "Skills",
+  "projects_nav": "Projects",
+  "contact_nav": "Contact",
+
+  "job_name": "Vue web developer",
+
+  "about_training": "My name is Christophe, I'm {age} years old and I completed a 7-month training course in web development at BeCode (Charleroi). During this training, I learned several programming languages and specialized in Front-End. I also did a 3-month internship at Alstom (within A6K in Charleroi), where I was able to deepen my knowledge and discover new frameworks.",
+  "about_work": "After completing my internship, I landed a contract as a web developer for over 3 years. My goal is to continue learning new languages and gaining experience in web development.",
+
+  "my_stack": "My stack",
+  "im_learning": "Currently learning",
+
+  "carsharing_description": "I started the project during my 3-month internship at Alstom, and continued to develop it afterwards. This site enables company employees to share car journeys to work. They can also create profiles, suggest or search for journeys, and enter their own car and fixed destinations. Development was put on hold following the Covid-19 pandemic.",
+  "desksharing_description": "Also at Alstom for this second project, it enables the reservation of office space to meet the needs of employees who need to work on site during the Covid-19 pandemic. The site is accessible only to the company's employees, allowing them to reserve an office in advance to ensure they will have a workspace. It also allows them to view office availability in real time, and reserve them for specific periods of time."
+}

@@ -8,7 +8,7 @@
         <div class="w-0 md:w-1/2"></div>
         <div class="w-full md:w-1/2">
             <p class="text-justify text-teal-300 drop-shadow-neon-sm text-sm md:text-md">
-                Je m'appelle Christophe, j'ai {{ myAge(new Date('1990-01-30')) }} ans et j'ai suivi une formation de 7 mois en développement web à BeCode (Charleroi). Au cours de cette formation, j'ai appris plusieurs langages de programmation et me suis spécialisé dans le Front-End. J'ai également effectué un stage de 3 mois à Alstom (au sein de A6K à Charleroi), où j'ai pu approfondir mes connaissances et découvrir de nouveaux frameworks.
+                {{ $t("about_training", { age: myAge(new Date('1990-01-30')) }) }}
             </p>
         </div>
     </div>

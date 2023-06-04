@@ -9,7 +9,7 @@
         :class="$route.path === item.path ? 'text-pink-400 drop-shadow-neon-active': 'drop-shadow-neon text-teal-300 hover:text-pink-400'"
         class="md:text-sm font-bold uppercase"
     >
-      {{ item.name }}
+      {{ $t(item.name) }}
     </NuxtLink>
 </template>
 
@@ -17,11 +17,11 @@
 import { changeColorsStore } from '~/store/store'
 
 const links= [
-  { name: 'Home', path: '/' },
-  { name: 'About', path: '/about' },
-  { name: 'Skills', path: '/skills' },
-  { name: 'Projects', path: '/projects' },
-  { name: 'Contact', path: '/contact' }
+  { name: 'home_nav', path: '/' },
+  { name: 'about_nav', path: '/about' },
+  { name: 'skills_nav', path: '/skills' },
+  { name: 'projects_nav', path: '/projects' },
+  { name: 'contact_nav', path: '/contact' }
 ]
 
 const colorsStore = changeColorsStore()

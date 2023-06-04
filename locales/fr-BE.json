@@ -1,0 +1,18 @@
+{
+  "home_nav": "Accueil",
+  "about_nav": "A propos",
+  "skills_nav": "Compétences",
+  "projects_nav": "Projets",
+  "contact_nav": "Me contacter",
+
+  "job_name": "Développeur web Vue",
+
+  "about_training": "Je m'appelle Christophe, j'ai {age} ans et j'ai suivi une formation de 7 mois en développement web à BeCode (Charleroi). Au cours de cette formation, j'ai appris plusieurs langages de programmation et me suis spécialisé dans le Front-End. J'ai également effectué un stage de 3 mois à Alstom (au sein de A6K à Charleroi), où j'ai pu approfondir mes connaissances et découvrir de nouveaux frameworks.",
+  "about_work": "Après avoir terminé mon stage, j'ai décroché un contrat en tant que développeur web pendant plus de 3 ans. Mon objectif est de continuer à apprendre de nouveaux langages et à acquérir de l'expérience dans le domaine du développement web.",
+
+  "my_stack": "Mon stack",
+  "im_learning": "En cours d'apprentissage",
+
+  "carsharing_description": "J'ai commencé le projet pendant mon stage de 3 mois, au sein de Alstom, et poursuivi son développement par la suite. Ce site permet aux employés de l'entreprise de partager des trajets en voiture pour se rendre au travail. Il leur permet également de créer des profils, de proposer ou de rechercher des trajets, et renseigner leur propre voiture ainsi que des destinations fixes. Le développement a été mis en suspends suite à la pandémie de Covid-19.",
+  "desksharing_description": "Toujours à Alstom pour ce second projet, il permet la réservation de bureaux pour répondre aux besoins des employés qui doivent travailler sur place pendant la pandémie de Covid-19. Le site est uniquement accessible aux employés de l'entreprise et leur permet de réserver un bureau à l'avance pour s'assurer qu'ils auront un espace de travail. il permet également de visualiser la disponibilité des bureaux en temps réel et de les réserver pour des périodes de temps spécifiques."
+}

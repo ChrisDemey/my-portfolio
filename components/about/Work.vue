@@ -9,7 +9,7 @@
     >
         <div class="w-full md:w-1/2">
             <p class="text-justify text-teal-300 drop-shadow-neon-sm text-sm md:text-md">
-                Après avoir terminé mon stage, j'ai décroché un contrat en tant que développeur web pendant plus de 3 ans. Mon objectif est de continuer à apprendre de nouveaux langages et à acquérir de l'expérience dans le domaine du développement web.
+                {{ $t("about_work") }}
             </p>
         </div>
         <div class="w-0 md:w-1/2"></div>
