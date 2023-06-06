@@ -7,7 +7,7 @@
         @mouseout="handleMouseLeave"
         style="--color: rgb(94 234 212)"
         :class="$route.path === item.path ? 'text-pink-400 drop-shadow-neon-active': 'drop-shadow-neon text-teal-300 hover:text-pink-400'"
-        class="md:text-sm font-bold uppercase"
+        class="md:text-sm font-bold uppercase whitespace-nowrap"
     >
       {{ $t(item.name) }}
     </NuxtLink>

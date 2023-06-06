@@ -23,32 +23,50 @@
         />
     </Modal>
 
-    <Container>
-        <template #top>
-            <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 space-x-0 md:space-x-8">
+    <div class="md:hidden absolute z-10 h-screen w-full">
+        <ul class="h-screen px-6 pb-6 flex items-end overflow-y-auto space-x-10">
+            <li v-for="(item, index) in projects" :key="index" class="space-y-4">
                 <ImagesCard
-                    name="carsharing"
-                    image="/images/projects/carsharing/trips_list.png"
-                    @click="showCarsharingSwiper = true"
+                    :name="item.name"
+                    :image="item.image"
+                    @click="item.name === 'carsharing' ? showCarsharingSwiper = true : showDesksharingSwiper = true"
                 />
-                <ImagesCard
-                    name="desksharing"
-                    image="/images/projects/desksharing/devices_filter.png"
-                    @click="showDesksharingSwiper = true"
+                <DescriptionCard
+                    :text="item.text"
                 />
-            </div>
-        </template>
+            </li>
+        </ul>
+    </div>
 
-        <template #bottom>
-            <DescriptionCard />
-        </template>
+    <div class="hidden md:block absolute z-10 h-screen w-full">
+      <ul class="h-2/3 flex justify-center items-end space-x-6 pb-4">
+        <li v-for="(item, index) in projects" :key="index" class="space-y-4">
+          <ImagesCard
+              :name="item.name"
+              :image="item.image"
+              @click="item.name === 'carsharing' ? showCarsharingSwiper = true : showDesksharingSwiper = true"
+          />
+        </li>
+      </ul>
+      <ul class="h-1/3 flex justify-center space-x-6 pt-4">
+        <li v-for="(item, index) in projects" :key="index">
+          <DescriptionCard
+              :text="item.text"
+          />
+        </li>
+      </ul>
+    </div>
 
-    </Container>
 </template>
 
 <script setup lang="ts">
 const showCarsharingSwiper = ref(false)
 const showDesksharingSwiper = ref(false)
+
+const projects = [
+    { name:'carsharing', image:'/images/projects/carsharing/trips_list.png', text: 'carsharing_description' },
+    { name:'desksharing', image:'/images/projects/desksharing/devices_filter.png', text: 'desksharing_description' },
+]
 
 const carsharingImages = [
     { image:'/images/projects/carsharing/trips_list.png' },

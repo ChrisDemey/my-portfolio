@@ -1,7 +1,7 @@
 <template>
-    <div style="--color: rgb(94 234 212)" class="text-[--color] max-w-4xl">
+    <div style="--color: rgb(94 234 212)" class="text-[--color]">
 
-        <div class="group cursor-pointer bg-black/50 px-4 md:px-8 pb-3 md:pb-6 pt-2 md:pt-3 w-72 md:w-96 aspect-video rounded-xl border-2 border-[--color] shadow-neon-inner">
+        <div class="group cursor-pointer bg-black/50 px-4 md:px-8 pb-3 md:pb-6 pt-2 md:pt-3 w-96 aspect-video rounded-xl border-2 border-[--color] shadow-neon-inner">
             <h3 style="--color: rgb(236 72 153)" class="mb-2 text-center text-lg md:text-2xl uppercase text-pink-400 drop-shadow-neon">
                 {{ props.name }}
             </h3>
@@ -17,9 +17,4 @@ const props = defineProps({
     name: String,
     image: String
 })
-
-// const projectImages = [
-//     { name:'carsharing', image:'/images/projects/carsharing/trips_list.png' },
-//     { name:'desksharing', image:'/images/projects/desksharing/devices_filter.png' },
-// ]
 </script>
