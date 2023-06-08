@@ -13,7 +13,7 @@
             :key="index"
         >
             <img
-                class="border-4 border-pink-400 shadow-neon-inner w-11/12 mx-auto aspect-video object-cover rounded-xl"
+                class="border-4 border-pink-400 shadow-neon-inner w-10/12 mx-auto h-auto object-cover rounded-xl"
                 :src="item.image"
                 alt="image"
             >

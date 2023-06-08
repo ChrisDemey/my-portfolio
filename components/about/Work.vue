@@ -5,10 +5,9 @@
              --color: rgb(94 234 212);
              background-image: linear-gradient(-90deg, rgb(0,0,0,0), rgb(0,0,0,0.70) , rgb(0,0,0,0.90)), url('/images/about/work.jpeg');
              background-blend-mode: multiply;
-         "
-    >
+    ">
         <div class="w-full md:w-1/2">
-            <p class="text-justify text-teal-300 drop-shadow-neon-sm text-sm md:text-md">
+            <p class="text-justify text-teal-300 drop-shadow-neon-sm text-base md:text-lg">
                 {{ $t("about_work") }}
             </p>
         </div>
