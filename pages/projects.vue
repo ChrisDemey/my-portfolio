@@ -1,8 +1,7 @@
 <template>
     <Head>
-        <Title>
-            &#60;Portfolio :page="Projects" &#47;&#62;
-        </Title>
+        <Title>&#60;Portfolio :page="Projects" &#47;&#62;</Title>
+        <Meta name="Projects page" content="All of my client projects"/>
     </Head>
 
     <Modal

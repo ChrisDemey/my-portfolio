@@ -1,8 +1,7 @@
 <template>
     <Head>
-        <Title>
-            &#60;Portfolio :page="Welcome" &#47;&#62;
-        </Title>
+        <Title>&#60;Portfolio :page="Welcome" &#47;&#62;</Title>
+        <Meta name="Home page" content="Landing page of my website"/>
     </Head>
     <Container>
         <template #top>

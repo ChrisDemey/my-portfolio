@@ -1,8 +1,7 @@
 <template>
     <Head>
-        <Title>
-            &#60;Portfolio :page="Contact me" &#47;&#62;
-        </Title>
+        <Title>&#60;Portfolio :page="Contact me" &#47;&#62;</Title>
+        <Meta name="Contact page" content="Here is how you can contact me"/>
     </Head>
     <Container>
         <template #top></template>

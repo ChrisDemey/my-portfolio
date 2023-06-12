@@ -1,5 +1,5 @@
 <template>
-    <a href="https://github.com/ChrisDemey/my-portfolio" target="_blank">
+    <a href="https://github.com/ChrisDemey/my-portfolio" target="_blank" aria-label="See the repo of my awesome portfolio">
         <svg
             style="--color: rgb(94 234 212)"
             @mouseover="handleMouseEnter"
