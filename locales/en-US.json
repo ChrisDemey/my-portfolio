@@ -13,6 +13,6 @@
   "my_stack": "My stack",
   "im_learning": "Currently learning",
 
-  "carsharing_description": "I started the project during my 3-month internship at Alstom, and continued to develop it afterwards. This site enables company employees to share car journeys to work. They can also create profiles, suggest or search for journeys, and enter their own car and fixed destinations. Development was put on hold following the Covid-19 pandemic.",
-  "desksharing_description": "Also at Alstom for this second project, it enables the reservation of office space to meet the needs of employees who need to work on site during the Covid-19 pandemic. The site is accessible only to the company's employees, allowing them to reserve an office in advance to ensure they will have a workspace. It also allows them to view office availability in real time, and reserve them for specific periods of time."
+  "carsharing_description": "Car sharing project, reserved for company employees. They can create/share/search for trips, as well as register their own car and fixed destinations.",
+  "desksharing_description": "Desk sharing project. Implemented during the Covid-19 pandemic, it allows users to view the availability of offices in real time and reserve them for specific periods of time."
 }
