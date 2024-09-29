@@ -8,7 +8,7 @@
             <Stack />
         </template>
         <template #bottom>
-            <Learning />
+            <!-- <Learning /> -->
         </template>
     </Container>
 </template>

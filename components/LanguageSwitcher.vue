@@ -5,7 +5,7 @@
             <!-- toggle -->
             <label
                 for="toggle"
-                class="block border-2 border-teal-300 drop-shadow-neon-sm overflow-hidden h-5 rounded-full cursor-pointer transition duration-200 ease-in"
+                class="block h-5 overflow-hidden transition duration-200 ease-in border-2 border-teal-300 rounded-full cursor-pointer drop-shadow-neon-sm"
             ></label>
             <!-- ball -->
             <input
@@ -13,7 +13,7 @@
                 type="checkbox"
                 id="toggle"
                 aria-label="Language switcher"
-                class="shadow-neon translate-x-0 absolute z-10 block h-3 mx-1 aspect-square rounded-full bg-pink-400 appearance-none cursor-pointer transition duration-200 ease-in"
+                class="absolute z-10 block h-3 mx-1 transition duration-200 ease-in translate-x-0 bg-pink-400 rounded-full appearance-none cursor-pointer shadow-neon aspect-square"
                 :class="{ 'translate-x-5': $i18n.locale === 'fr' }"
                 @change="$i18n.setLocale($i18n.locale === 'en' ? 'fr' : 'en')"
                 :checked="$i18n.locale === 'fr'"
@@ -22,5 +22,3 @@
         <span class="text-teal-300 drop-shadow-neon-sm">fr</span>
     </div>
 </template>
-<script setup lang="ts">
-</script>

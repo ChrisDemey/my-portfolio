@@ -22,8 +22,8 @@
         />
     </Modal>
 
-    <div class="md:hidden absolute z-10 h-screen w-full">
-        <ul class="h-screen px-6 pb-6 flex items-end overflow-y-auto space-x-10">
+    <div class="absolute z-10 w-full h-screen md:hidden">
+        <ul class="flex items-end h-screen px-6 pb-6 space-x-10 overflow-y-auto">
             <li v-for="(item, index) in projects" :key="index" class="space-y-4">
                 <ImagesCard
                     :name="item.name"
@@ -37,23 +37,23 @@
         </ul>
     </div>
 
-    <div class="hidden md:block absolute z-10 h-screen w-full">
-      <ul class="h-2/3 flex justify-center items-end space-x-6 pb-4">
-        <li v-for="(item, index) in projects" :key="index" class="space-y-4">
-          <ImagesCard
-              :name="item.name"
-              :image="item.image"
-              @click="item.name === 'carsharing' ? showCarsharingSwiper = true : showDesksharingSwiper = true"
-          />
-        </li>
-      </ul>
-      <ul class="h-1/3 flex justify-center space-x-6 pt-4">
-        <li v-for="(item, index) in projects" :key="index">
-          <DescriptionCard
-              :text="item.text"
-          />
-        </li>
-      </ul>
+    <div class="absolute z-10 hidden w-full h-screen md:block">
+        <ul class="flex items-end justify-center pb-4 space-x-6 h-2/3">
+            <li v-for="(item, index) in projects" :key="index" class="space-y-4">
+            <ImagesCard
+                :name="item.name"
+                :image="item.image"
+                @click="item.name === 'carsharing' ? showCarsharingSwiper = true : showDesksharingSwiper = true"
+            />
+            </li>
+        </ul>
+        <ul class="flex justify-center pt-4 space-x-6 h-1/3">
+            <li v-for="(item, index) in projects" :key="index">
+            <DescriptionCard
+                :text="item.text"
+            />
+            </li>
+        </ul>
     </div>
 
 </template>
@@ -76,8 +76,8 @@ const carsharingImages = [
 ]
 
 const desksharingImages = [
-  { image:'/images/projects/desksharing/devices_filter.png' },
-  { image:'/images/projects/desksharing/settings_page.png' },
+    { image:'/images/projects/desksharing/devices_filter.png' },
+    { image:'/images/projects/desksharing/settings_page.png' },
 
 ]
 </script>
