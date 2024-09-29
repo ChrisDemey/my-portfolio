@@ -13,6 +13,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+      // texts
       dropShadow: {
         'neon': [
           '0 0 2px var(--color)',
@@ -29,9 +30,10 @@ module.exports = {
             '0 0 25px rgb(236 72 153)',
         ],
       },
+      // frames
       boxShadow: {
-        'neon': '0 0 5px var(--color), 0 0 10px var(--color), 0 0 20px var(--color)',
-        'neon-inner': '0 0 5px var(--color), 0 0 10px var(--color), 0 0 20px var(--color), inset 0 0 5px var(--color), inset 0 0 10px var(--color), inset 0 0 20px var(--color)',
+        'neon': '0 0 2px var(--color), 0 0 5px var(--color), 0 0 10px var(--color)',
+        'neon-inner': '0 0 2px var(--color), 0 0 5px var(--color), 0 0 10px var(--color), inset 0 0 2px var(--color), inset 0 0 5px var(--color), inset 0 0 10px var(--color)',
       },
       animation: {
         glow: 'glow 10s infinite linear',
