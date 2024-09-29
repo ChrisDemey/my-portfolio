@@ -18,10 +18,10 @@ import { changeColorsStore } from '~/store/store'
 
 const links= [
   { name: 'home_nav', path: '/' },
-  { name: 'Why code?', path: '/nocode' },
-  { name: 'about_nav', path: '/about' },
-  { name: 'skills_nav', path: '/skills' },
+  { name: 'whycode_nav', path: '/nocode' },
   { name: 'projects_nav', path: '/projects' },
+  { name: 'skills_nav', path: '/skills' },
+  { name: 'about_nav', path: '/about' },
   { name: 'contact_nav', path: '/contact' }
 ]
 
