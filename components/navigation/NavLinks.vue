@@ -1,13 +1,13 @@
 <template>
     <NuxtLink
-        v-for="item in links"
-        :key="item.name"
-        :to="item.path"
-        @mouseover="handleMouseEnter"
-        @mouseout="handleMouseLeave"
-        style="--color: rgb(94 234 212)"
-        :class="$route.path === item.path ? 'text-pink-400 drop-shadow-neon-active': 'drop-shadow-neon text-teal-300 hover:text-pink-400'"
-        class="md:text-sm font-bold uppercase whitespace-nowrap"
+      v-for="item in links"
+      :key="item.name"
+      :to="item.path"
+      @mouseover="handleMouseEnter"
+      @mouseout="handleMouseLeave"
+      style="--color: rgb(94 234 212)"
+      :class="$route.path === item.path ? 'text-pink-400 drop-shadow-neon-active': 'drop-shadow-neon-sm text-teal-300 hover:text-pink-400'"
+      class="uppercase md:text-sm whitespace-nowrap"
     >
       {{ $t(item.name) }}
     </NuxtLink>
@@ -18,6 +18,7 @@ import { changeColorsStore } from '~/store/store'
 
 const links= [
   { name: 'home_nav', path: '/' },
+  { name: 'Why code?', path: '/nocode' },
   { name: 'about_nav', path: '/about' },
   { name: 'skills_nav', path: '/skills' },
   { name: 'projects_nav', path: '/projects' },

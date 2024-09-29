@@ -5,7 +5,34 @@
   "projects_nav": "Projets",
   "contact_nav": "Me contacter",
 
+  "asking_first": "Faire appel à un développeur? Découvrez",
+  "click": "ici",
+  "asking_two": "pourquoi",
   "job_name": "Développeur web Vue",
+
+  "custom_title": "Personnalisation complète",
+  "custom_code": "Personnalisation totale selon vos besoins",
+  "custom_nocode": "Limites créatives avec les plateformes no-code",
+
+  "perf_title": "Performances optimisées",
+  "perf_code": "Rapidité et fluidité pour les utilisateurs",
+  "perf_nocode": "Risques de lenteur des sites no-code",
+
+  "control_title": "Contrôle total sur le code",
+  "control_code": "Contrôle complet pour des modifications faciles",
+  "control_nocode": "Difficulté d'ajouter des fonctionnalités spécifiques",
+
+  "scale_title": "Scalabilité & Coût",
+  "scale_code": "Flexibilité pour développer le projet pour un coût",
+  "scale_nocode": "Coût initial moins élevé mais potentiel moindre",
+
+  "security_title": "Securité renforcée",
+  "security_code": "Sécurité accrue avec protections spécifiques",
+  "security_nocode": "Certaines plateformes no code sont moins sécurisées",
+
+  "integration_title": "Intégration personnalisée",
+  "integration_code": "Intégration d’outils facile et rapide selon vos besoins",
+  "integration_nocode": "Gestion des mises à jour simples mais sans contrôle",
 
   "about_training": "Je m'appelle Christophe, j'ai {age} ans et j'ai suivi une formation de 7 mois en développement web à BeCode (Charleroi). Au cours de cette formation, j'ai appris plusieurs langages de programmation et me suis spécialisé dans le Front-End. J'ai également effectué un stage de 3 mois à Alstom (au sein de A6K à Charleroi), où j'ai pu approfondir mes connaissances et découvrir de nouveaux frameworks.",
   "about_work": "Après avoir terminé mon stage, j'ai décroché un contrat en tant que développeur web pendant plus de 3 ans. Mon objectif est de continuer à apprendre de nouveaux langages et à acquérir de l'expérience dans le domaine du développement web.",

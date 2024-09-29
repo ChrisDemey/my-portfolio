@@ -8,7 +8,12 @@
             <Name class="-mb-2" />
         </template>
         <template #bottom>
-            <Job class="-mt-3" />
+            <div
+                style="--color: rgb(236 72 153)"
+                class="relative flex justify-center text-xl text-center text-pink-400 uppercase h-1/3 drop-shadow-neon-sm"
+            >
+                <p>{{ $t("asking_first") }} <NuxtLink to="/nocode" class="underline underline-offset-4 animate-blink">{{ $t("click") }}</NuxtLink> {{ $t("asking_two") }}</p>
+            </div>
         </template>
     </Container>
 </template>

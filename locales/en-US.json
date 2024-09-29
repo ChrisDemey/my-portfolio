@@ -5,7 +5,34 @@
   "projects_nav": "Projects",
   "contact_nav": "Contact",
 
+  "asking_first": "Asking for a developer? Click",
+  "click": "here",
+  "asking_two": "to see why",
   "job_name": "Vue web developer",
+
+  "custom_title": "Complete customization",
+  "custom_code": "Total customization according to your needs",
+  "custom_nocode": "Creative limits with no-code platforms",
+
+  "perf_title": "Optimized performance",
+  "perf_code": "Speed and fluidity for users",
+  "perf_nocode": "Risks of slowness on no-code sites",
+
+  "control_title": "Total control on code",
+  "control_code": "Complete control for easy modifications",
+  "control_nocode": "Difficulty of adding specific features",
+
+  "scale_title": "Scalability & Cost",
+  "scale_code": "Flexibility to grow the project (for a cost)",
+  "scale_nocode": "Less initial cost but less growth potential",
+
+  "security_title": "Enhanced security",
+  "security_code": "Increased safety with special protections",
+  "security_nocode": "Some no-code platforms are less secure",
+
+  "integration_title": "Customized integration",
+  "integration_code": "Quick and easy tool integration to suit your needs",
+  "integration_nocode": "Simple, uncontrolled update management",
 
   "about_training": "My name is Christophe, I'm {age} years old and I completed a 7-month training course in web development at BeCode (Charleroi). During this training, I learned several programming languages and specialized in Front-End. I also did a 3-month internship at Alstom (within A6K in Charleroi), where I was able to deepen my knowledge and discover new frameworks.",
   "about_work": "After completing my internship, I landed a contract as a web developer for over 3 years. My goal is to continue learning new languages and gaining experience in web development.",
