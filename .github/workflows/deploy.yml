@@ -1,0 +1,36 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Le workflow se déclenche sur un push vers la branche 'main'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Check-out du dépôt
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. Installer Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16 # La version de Node.js requise par Nuxt
+
+      # 3. Installer les dépendances
+      - name: Install dependencies
+        run: npm ci
+
+      # 4. Construire le site statique
+      - name: Build the project
+        run: npm run generate
+
+      # 5. Déployer sur GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist # Le dossier généré par Nuxt
