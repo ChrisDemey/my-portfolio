@@ -29,7 +29,12 @@ export default defineNuxtConfig({
       },
     ],
   },
-  modules: ["nuxt-swiper", "@pinia/nuxt", "@nuxtjs/i18n"],
+  modules: [
+    "nuxt-swiper",
+    "@pinia/nuxt",
+    "@nuxtjs/i18n",
+    "@nuxtjs/tailwindcss",
+  ],
   pages: true,
   postcss: {
     plugins: {

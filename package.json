@@ -10,14 +10,16 @@
   },
   "devDependencies": {
     "@nuxtjs/i18n": "^8.0.0-beta.12",
+    "@nuxtjs/tailwindcss": "^6.13.1",
     "autoprefixer": "^10.4.14",
     "nuxt": "^3.3.3",
     "nuxt-icon": "^0.3.3",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.3.1"
+    "postcss": "^8.x",
+    "tailwindcss": "^3.4.17"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.10",
+    "nuxt": "^3.3.3",
     "nuxt-swiper": "^1.1.0",
     "pinia": "^2.0.36"
   },
