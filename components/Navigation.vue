@@ -1,25 +1,52 @@
 <template>
-    <div class="absolute z-50 flex items-center justify-center w-full">
-        <div class="flex items-center justify-between w-full px-4 pt-4 md:px-8 md:pt-6 max-w-7xl md:justify-end md:space-x-8">
-            <div style="--color: rgb(94 234 212)" class="relative md:hidden">
-                <svg @click="showMenu = !showMenu" class="w-10 text-teal-300 cursor-pointer drop-shadow-neon" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M21 6v2H3V6h18zM3 18h18v-2H3v2zm0-5h18v-2H3v2z"/>
-                </svg>
-                <div v-if="showMenu" class="absolute flex flex-col px-4 py-2 mt-1 ml-1 space-y-1 border-2 border-teal-300 rounded-lg bg-black/80 shadow-neon-inner">
-                    <NavLinks />
-                </div>
-            </div>
-            <div class="hidden space-x-8 md:flex">
-                <NavLinks />
-            </div>
-            <div class="flex space-x-6">
-                <RepoLink />
-                <LanguageSwitcher />
-            </div>
-        </div>
+  <nav class="flex text-white">
+    <div class="w-1/3 pl-5">
+      <img
+        class="contrast-125 size-10"
+        src="../public/favicon.ico"
+        alt="logo"
+      />
     </div>
+    <ul class="flex items-center justify-center w-1/3 space-x-4 text-white">
+      <NuxtLink
+        v-for="item in links"
+        :key="item.name"
+        :to="item.path"
+        @mouseover="handleMouseEnter"
+        @mouseout="handleMouseLeave"
+        style="--color: rgb(94 234 212)"
+        :class="
+          $route.path === item.path
+            ? 'text-pink-200 drop-shadow-neon-active'
+            : 'drop-shadow-neon-sm text-teal-200 hover:text-pink-200'
+        "
+        class="uppercase md:text-sm whitespace-nowrap"
+      >
+        {{ $t(item.name) }}
+      </NuxtLink>
+    </ul>
+  </nav>
 </template>
 
 <script setup lang="ts">
-const showMenu = ref(false)
+import { changeColorsStore } from "~/store/store";
+
+const links = [
+  { name: "home_nav", path: "/" },
+  { name: "whycode_nav", path: "/nocode" },
+  { name: "projects_nav", path: "/projects" },
+  { name: "skills_nav", path: "/skills" },
+  { name: "about_nav", path: "/about" },
+  { name: "contact_nav", path: "/contact" },
+];
+
+const colorsStore = changeColorsStore();
+
+const handleMouseEnter = (event: MouseEvent) => {
+  colorsStore.changeShadowColor(event);
+};
+
+const handleMouseLeave = (event: MouseEvent) => {
+  colorsStore.resetShadowColor(event);
+};
 </script>
