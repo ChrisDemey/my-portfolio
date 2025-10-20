@@ -3,6 +3,10 @@
 </template>
 
 <script setup lang="ts">
+onMounted(() => {
+  window.location.href = 'https://www.chriswave.be';
+});
+
 console.log("%c.",
     "margin-top: 20px;" +
     "margin-bottom: 20px;" +
